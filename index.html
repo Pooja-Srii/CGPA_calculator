@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <bod>
+        <div class="calculator-box">
+            <h1>CGPA CALCULATOR</h1>
+            <div id="course-wrapper">
+              <form class="key-0">
+                  <strong><label id="course-row" for="courses">Courses</label></strong>
+                <strong><label id="course-row" for="courses">Credit Units</label></strong>
+                <strong><label id="course-row" for="courses">Grades</label></strong>
+                
+                <input
+                  type="text"
+                  placeholder="Course Code"
+                  class="courses key-0"
+                  required
+                />
+           
+                <input
+                  type="number"
+                  class="credit-units key-0"
+                  placeholder="Credit Units"
+                  value=""
+                  required
+                />
+             
+                <select class="grade key-0" required>
+                  <option class="grade" value="select">Select</option>
+                  <option class="grade" value="10">O</option>
+                 
+                  <option class="grade" value="9">A+</option>
+                  <option class="grade" value="8">A</option>
+                  <option class="grade" value="7">B+</option>
+                  <option class="grade" value="6">B</option>
+                  <option class="grade" value="5">C</option>
+                  <option class="grade" value="4">D</option>
+                  <option class="grade" value="3">E</option>
+                  <option class="grade" value="0">F</option>
+                </select>
+              </form>
+            </div>
+        
+            <div class="btn">
+              <button onclick="addCourse()">+ Add Course</button>
+              <button onclick="removeCourse()">- Remove Course</button>
+              <button onclick="calcCgpa()">Calculate CGPA</button>
+            </div>
+            <div class="lastp">
+              <p id="cgpa-calc">Your CGPA is:</p>
+            </div>
+          </div>
+    </bod>
+    <script src="script.js" defer></script>
+</html>
